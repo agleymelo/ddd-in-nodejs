@@ -31,7 +31,7 @@ export class Answer extends Entity<AnswerProps> {
   }
 
   get excerpt() {
-    return this.content.substring(0, 120).trim().concat("...")
+    return this.content.substring(0, 120).trim().concat('...')
   }
 
   private touch() {
@@ -45,14 +45,14 @@ export class Answer extends Entity<AnswerProps> {
 
   static create(
     props: Optional<AnswerProps, 'createdAt'>,
-    id?: UniqueEntityID
+    id?: UniqueEntityID,
   ) {
     const question = new Answer(
       {
         ...props,
         createdAt: new Date(),
       },
-      id
+      id,
     )
 
     return question

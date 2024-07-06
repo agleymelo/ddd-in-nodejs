@@ -9,6 +9,7 @@ Design dirigido a dominio
 - Linguagem ubiqua (ou linguagem de dominio)
 
 - Usuario
+
   - Cliente
   - Fornecedor
   - Atendente
@@ -17,6 +18,6 @@ Design dirigido a dominio
 - Agregados
 - Value Objects
 - Eventos de dominio
-- Subdominios (Bounded Contexts) 
+- Subdominios (Bounded Contexts)
 - Entidades
 - Casos de uso

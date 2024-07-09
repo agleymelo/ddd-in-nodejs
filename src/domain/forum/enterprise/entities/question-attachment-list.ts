@@ -1,8 +1,8 @@
 import { WatchedList } from '@/core/entities/watched-list'
-import { QuestionAttachment } from './question-attachments'
+import { QuestionAttachments } from './question-attachment'
 
-export class QuestionAttachmentList extends WatchedList<QuestionAttachment> {
-  compareItems(a: QuestionAttachment, b: QuestionAttachment): boolean {
+export class QuestionAttachmentList extends WatchedList<QuestionAttachments> {
+  compareItems(a: QuestionAttachments, b: QuestionAttachments): boolean {
     return a.attachmentId === b.attachmentId
   }
 }

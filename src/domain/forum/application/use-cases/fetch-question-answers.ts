@@ -15,7 +15,7 @@ type FetchQuestionAnswersUseCaseReply = Either<
 >
 
 export class FetchQuestionAnswersUseCase {
-  constructor(private answersRepository: AnswersRepository) { }
+  constructor(private answersRepository: AnswersRepository) {}
 
   async execute({
     questionId,

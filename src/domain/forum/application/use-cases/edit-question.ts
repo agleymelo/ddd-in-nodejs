@@ -6,7 +6,7 @@ import { NotAllowedError } from './errors/not-allowed-error'
 import { QuestionAttachmentsRepository } from '../repositories/question-attachments-repository'
 import { QuestionAttachmentList } from '../../enterprise/entities/question-attachment-list'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
-import { QuestionAttachments } from '../../enterprise/entities/question-attachments'
+import { QuestionAttachments } from '../../enterprise/entities/question-attachment'
 
 interface EditQuestionUseCaseRequest {
   authorId: string
@@ -27,7 +27,7 @@ export class EditQuestionUseCase {
   constructor(
     private questionRepository: QuestionsRepository,
     private questionAttachmentsRepository: QuestionAttachmentsRepository,
-  ) { }
+  ) {}
 
   async execute({
     authorId,

@@ -5,10 +5,10 @@ interface DeleteQuestionCommentUseCaseRequest {
   questionCommentId: string
 }
 
-interface DeleteQuestionCommentUseCaseReply { }
+interface DeleteQuestionCommentUseCaseReply {}
 
 export class DeleteQuestionCommentUseCase {
-  constructor(private questionCommentsRepository: QuestionCommentsRepository) { }
+  constructor(private questionCommentsRepository: QuestionCommentsRepository) {}
 
   async execute({
     authorId,
